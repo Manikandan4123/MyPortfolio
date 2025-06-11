@@ -1,0 +1,554 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    color: #212529 !important;
+    text-align: left !important;
+}
+h2{
+  font-family: "Tagesschrift", system-ui !important;
+  font-weight: 1200 !important;
+  font-size: xx-large !important;
+  font-style: normal !important;
+  color: blueviolet !important;
+  letter-spacing: 2px !important;
+}
+
+.nav-content{
+    position: fixed;
+    padding:0px 48px;
+    top:0;
+    left:0; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Baloo Paaji', cursive;
+    font-weight: bold;
+    color: #fff;
+    transition: 0.5s ease-in-out; 
+}
+
+.nav-content-scrolled{
+    background-color: white;
+    box-shadow: 0 3px 10px whitesmoke;
+    position: fixed;
+    padding:0px 48px;
+    top:0;
+    left:0; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Baloo Paaji', cursive;
+    font-weight: bold;
+    color: black;
+    transition: 0.5s ease-in-out;
+    z-index: 10000;
+}
+
+
+.navigation{
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+}
+
+.list{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none; 
+}
+
+.list_hidden{
+    display: none;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    font-size:x-large;
+    color: #fff;
+    text-shadow:2px 2px 2px #212529;
+}
+.navigation{
+    opacity: 1;
+}
+
+.navigation a:hover{
+    color: blueviolet;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.nav.hidden {
+  display: none;
+}
+
+.container:hover .bar1{
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.container:hover .bar2 {opacity: 0;}
+
+.container:hover .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+} 
+
+
+header{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    background-image: url('header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+.overlay{
+    background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+}
+#Identity{
+    font-family:Cambria'Baloo Paaji';
+    margin: 20px 164px;
+    width: 100%;
+    padding-left: calc(100%/5);
+}
+
+
+#qt{
+    font-size: larger;
+}
+.hi{
+    font-size: 6rem;
+    font-weight: bold;
+}
+.name{
+    font-size: 5rem;
+    font-weight: bold;
+
+}
+.id-sub{
+    margin-bottom: 20px;
+    opacity: .8;
+}
+
+.id-button{
+    border-radius: 20px;
+    padding-block: 10px;
+    padding-inline: 30px;
+    color: #fff;
+    background-color: blueviolet;
+    cursor: pointer;
+    box-shadow: #444;
+    transition: 0.5s ease-in-out;
+}
+
+.id-button:hover{
+    transform: scale(1.05);
+}
+#About{     
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+.about-cont{
+    margin: 0px 64px;
+    display: flex;
+    align-items: center;
+}
+.me{
+    display: block; 
+    border: 2px solid rgb(120, 115, 115);
+    border-radius: 50px;
+    text-align: left;
+    padding-block: 20px;
+    padding-inline: 35px;
+    max-width: 60%;
+} 
+.me-heading{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.about-data{
+    text-align: left;
+    padding-right: 50px;
+}
+.about_img{
+    border-radius: 125px;
+    width: 250px;
+    padding-left: 2rem;
+    margin-right: 20px;
+}
+
+.caption{
+    text-align: center;
+}
+
+#service{
+    margin: 0 64px;
+}
+.service_data{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+}
+
+/* --------------------->Service Card<-------------------------- */
+.box {
+  position: relative;
+  width: 195px;
+  height: 200px;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  color: black;
+  transition: 0.5s ease-in-out;
+  background-color: #c5bde8;
+}
+
+.display{
+    position: absolute;
+    top: 40px;
+    left: 35px;
+    transition: 1s ease-in-out;
+    text-align: center;
+  }
+
+.box-content {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.box:hover > .box-content {
+  opacity: 1;
+}
+
+
+.box:hover {
+  transform: scale(1.2) rotate(-2deg);
+}
+
+.box:hover .display{
+opacity: 0;
+}
+/* --------------------->Service Card<-------------------------- */
+
+#portfolio{
+    margin: 0 64px;
+}
+.portfolio-heading{
+    text-align: center;
+}
+ .portfolio-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+} 
+.portfolio-content img{
+     transition: 0.5s ease-in-out;
+}
+.portfolio-content img:hover{
+    transform: scale(1.2);
+}
+
+#Pricing{
+    margin: 0 64px;
+}
+.price-heading{
+    text-align: center;
+ }
+ .price-details{
+    display: flex;
+    justify-content: center;
+ }
+
+ .price-box{
+    border: 1px solid rgb(43, 41, 41);
+    min-height: max-content;
+    padding: 3rem;
+    line-height: 2;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    background-color: white;
+ }
+ .price-sub{
+    font-weight: bolder;
+    font-size:xx-large;
+ }
+ .money{
+    font-family:Georgia;
+    font-size:xx-large;
+    font-weight: bolder;
+ }
+ .price-box button{
+    border-radius: 20px;
+    padding-block: 10px;
+    padding-inline: 30px;
+    color: #fff;
+    background-color: #695aa6;
+    cursor: pointer;
+    border: transparent;
+ }
+ .price-box button:hover{
+        border: 2px solid whitesmoke;
+        box-shadow:2px 2px #595757;
+ }
+ .price-box:hover{
+    transform: scale(1.02);
+ }
+
+
+ #Testimonial{  
+    margin: 0 64px;
+ }
+
+ .test-heading{
+    text-align: center;
+ }
+.test-content{
+    padding-top: 2rem;
+    display: flex;
+    gap: 30px;
+ }
+
+ .test-one, .test-two{
+    border: 2px solid rgb(46, 43, 43);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 3px rgb(106, 102, 102); 
+ }
+ .test-box{
+    margin-left: auto;
+    text-align: left;
+    max-width: 100%;
+    min-height: 100px;
+ }
+.test-img img{
+    border: 1px solid black;
+    border-radius: 55px;
+}
+
+.test-one:hover, .test-two:hover{
+    border: 1px solid black;
+    box-shadow: 12px 12px rgb(106, 102, 102); 
+}
+.author{
+    color: blueviolet;
+    font-size: large;
+    font-weight: bolder;
+}
+
+ #blog{
+    margin: 0 64px;
+ }
+
+ .blog-heading{
+    text-align: center;
+ }
+
+ .blog-content{
+    margin-left: 20px;
+    padding: 3rem;
+ } 
+
+ .blog-one, .blog-two{
+    display: flex;
+    border: 1px solid rgb(155, 147, 147);
+    border-radius: 25px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10rem;
+ }
+.blog-text{
+   margin-right: 2rem;
+}
+.blog-img{
+    border-radius: 25px;
+}
+
+.blog-one:hover, .blog-two:hover, .blog-img{
+    transform: scale(1.02);
+} 
+#contact{
+    margin: 0 64px;
+}
+ .contact-heading{
+    text-align: center;
+ }
+.contact-content{
+    text-align: center;
+    min-width: 75%;
+    min-height: 75%;
+}
+.contact-content{
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
+form{
+    padding: 3rem !important; 
+    border: 2px ridge rgb(104, 98, 98) !important;
+    text-align: left;
+    line-height: 45px;
+    transition: 0.5s ease-in-out;
+}
+form:hover{
+        transform: scale(1.05);
+}
+.input-type{
+    padding: 6px;
+    border-radius: 10px;
+}
+.input-button{
+    border-radius: 20px;
+    padding-block: 10px;
+    padding-inline: 30px;
+    color: #fff;
+    background-color: blueviolet;
+    cursor: pointer;
+    box-shadow: #444;
+    transition: 0.5s ease-in-out;
+}
+.input-button:hover{
+    transform: scale(1.05);
+}
+.line-break{
+  border: 0; 
+  height: 2px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+#footer{
+    margin: 0 64px;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    min-height: 70px;
+    flex-wrap: nowrap;
+}
+.top{
+    width: 75%;
+    display: flex;
+    justify-content:flex-end;
+    gap: 20px;
+}
+
+.fa {
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+
+.fa:hover {
+    transform: scale(2);
+}
+
+.footer-content p{
+    letter-spacing: 3px;
+}
+
+.back{
+  position: fixed;
+  display: block;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.back:hover {
+  background-color: whitesmoke;
+}
+
+
+ .whatsapp-icon {
+    position: fixed;
+    display: block;
+    padding: 5px 5px;
+    width: 40px;
+    height: 40px;
+    bottom: 75px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #25D366;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.whatsapp-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Vibration animation */
+.whatsapp-icon:hover{
+    animation: vibrate 0.3s linear;
+}
+
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
+.tooltip {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 110%; /* Position to the left of the icon */
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+}
+
+.whatsapp-icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.back:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+}
