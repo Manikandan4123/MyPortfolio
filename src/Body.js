@@ -1,34 +1,12 @@
 import React from 'react'
+import Quote from './Quote'
+import WapButton from './WapButton'
 
 export default function Body() {
   return (
-    <div>
-        <nav className="nav-content">
-        <div className="nav-logo">
-            <h1><img src="assets/images/FullLogo_Transparent_NoBuffer.png" alt="img" height="80" width="230"/></h1>
-        </div>
-        <div className="navigation">
-            <ul id="list" className="list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#Testimonial">Testimonial</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        <div id="container" className="container">
-            <div className="bar1"></div>
-            <div className="bar2"></div>
-            <div className="bar3"></div>
-        </div>
-        <br/><br/>
-    </nav>
+    <div>    
     <header>
         <section id="Identity">
-            <marquee width="80%" direction="left" height="100px" id="qt">Hello
-        <div className="2"></div>
-        </marquee>
             <div className="overlay"></div>
             <div className="id_content">
                 <p className="hi">Hi!</p>
@@ -259,10 +237,7 @@ export default function Body() {
         <a href="#">↑</a>
         <div className="tooltip">Back To Top</div>
     </div>
-    <div className="whatsapp-icon" id="waIcon">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"/>
-        <div className="tooltip">Click to connect with WhatsApp!!</div>
-    </div>
+    <WapButton></WapButton>
     </div>
   )
 }
