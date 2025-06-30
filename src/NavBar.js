@@ -21,7 +21,7 @@ function NavBar() {
       </div>
       <div className="navigation">
           <ul id="list" className={showList?'list':'list_hidden'}>
-              <li><a href="#">Home</a></li>
+              <li><a href="#Home">Home</a></li>
               <li><a href="#About">About</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#Testimonial">Testimonial</a></li>

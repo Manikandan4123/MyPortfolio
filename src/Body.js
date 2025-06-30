@@ -1,6 +1,6 @@
 import React from 'react'
-import Quote from './Quote'
 import WapButton from './WapButton'
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 export default function Body() {
   return (
@@ -19,7 +19,7 @@ export default function Body() {
     <br/><br/>  
     <section id="About">
         <div className="about-cont">
-            <img className="about_img" src="assets/images/MyPic_cropped.JPG" alt="Image" height="300" width="200"/>
+            <img className="about_img" src="assets/images/MyPic_cropped.JPG" alt="Manikandan" height="300" width="200"/>
             <div className="me">
                 <div className="me-heading">
                     <p>Who Am I ?</p>
@@ -40,7 +40,7 @@ export default function Body() {
         <div className="service_data">
             <div className="box">
                 <div className="display">
-                    <img src="assets/images/pencil-case.svg" alt="image" width="100" height="100"/>
+                    <img src="assets/images/pencil-case.svg" alt="pencil" width="100" height="100"/>
                     <p>Designer</p>
                 </div>  
                 <div className="box-content">
@@ -49,7 +49,7 @@ export default function Body() {
             </div>
             <div className="box">
                 <div className="display">
-                    <img src="assets/images/responsive.svg" alt="image" width="100" height="100"/>
+                    <img src="assets/images/responsive.svg" alt="responsive" width="100" height="100"/>
                     <p>Frontend Developer</p>
                 </div>
                 <div className="box-content">
@@ -59,7 +59,7 @@ export default function Body() {
             </div>
             <div className="box">
                 <div className="display">
-                    <img src="assets/images/toolbox.svg" alt="image" width="100" height="100"/>
+                    <img src="assets/images/toolbox.svg" alt="toolbox" width="100" height="100"/>
                     <p>Mentor</p>
                 </div>
                 <div className="box-content">
@@ -68,7 +68,7 @@ export default function Body() {
             </div>
             <div className="box">
                 <div className="display">
-                    <img src="assets/images/analytics.svg" alt="image" width="100" height="100"/>
+                    <img src="assets/images/analytics.svg" alt="analytics" width="100" height="100"/>
                     <p>App development</p>
                 </div>
                 <div className="box-content">
@@ -85,9 +85,9 @@ export default function Body() {
         </div>
         <div className="portfolio-content">
            
-            <img src="assets/images/best-landing-page-examples-64e6080f990bb-sej.webp" alt="Image" height="350" width="400"/>
-            <img src="assets/images/Screenshot-March-2018-Squarespace-Website-Homepage.png" alt="Image" height="350" width="400"/>
-            <img src="assets/images/Port1.jpg" alt="Image" height="350" width="400"/>                     
+            <img src="assets/images/best-landing-page-examples-64e6080f990bb-sej.webp" alt="ex" height="350" width="400"/>
+            <img src="assets/images/Screenshot-March-2018-Squarespace-Website-Homepage.png" alt="ex1" height="350" width="400"/>
+            <img src="assets/images/Port1.jpg" alt="Port1" height="350" width="400"/>                     
         </div>
     </section>
     <br/><br/><br/>
@@ -98,7 +98,7 @@ export default function Body() {
         </div>
         <div className="price-details">
             <div className="price-box">
-                <img src="assets/images/scooter.svg" alt="img" height="90" width="90"/>
+                <img src="assets/images/scooter.svg" alt="scooter" height="90" width="90"/>
                 <h2>Free</h2>
                 <div>
                     <p>Modern</p>
@@ -113,7 +113,7 @@ export default function Body() {
                 </div>
             </div>
             <div className="price-box">
-                <img src="assets/images/shipped.svg" alt="img" height="90" width="90"/>
+                <img src="assets/images/shipped.svg" alt="shipped" height="90" width="90"/>
                 <h2>Basic</h2>
                 <div>
                     <p>Modern</p>
@@ -128,7 +128,7 @@ export default function Body() {
                 </div>
             </div>
             <div className="price-box">
-                <img src="assets/images/startup.svg" alt="img" height="90" width="90"/>
+                <img src="assets/images/startup.svg" alt="stratup" height="90" width="90"/>
                 <h2>Premium</h2>
                 <div>
                     <p>Modern</p>
@@ -153,7 +153,7 @@ export default function Body() {
         <div className="test-content"> 
             <div className="test-one">
                 <div className="test-img">
-                    <img src="assets/images/avatar2.jpg" alt="img" height="100" width="100" className="test-img"/>
+                    <img src="assets/images/avatar2.jpg" alt="av2" height="100" width="100" className="test-img"/>
                 </div>
                 <div className="test-text">
                     <div className="text-box">
@@ -163,7 +163,7 @@ export default function Body() {
             </div>
             <div className="test-two">
                 <div className="test-img">
-                    <img src="assets/images/avatar3.jpg" alt="img" height="100" width="100" className="test-img"/>
+                    <img src="assets/images/avatar3.jpg" alt="av3" height="100" width="100" className="test-img"/>
                 </div>
                 <div className="text-box">
                     <p className="test-box">We were impressed with the developer's professional approach and their ability to explain complex technical concepts in a clear and concise manner The developer's expertise in [specific technology or framework] was invaluable. They helped us build a robust and user-friendly website that meets our needs. <span className="author">&nbsp;&nbsp;&nbsp;-Rebecca</span></p>
@@ -179,12 +179,12 @@ export default function Body() {
         </div>
         <div className="blog-content">
             <div className="blog-one">
-                <img src="assets/images/img-1.jpg" alt="img" height="200" width="300" className="blog-img"/>
+                <img src="assets/images/img-1.jpg" alt="img-1" height="200" width="300" className="blog-img"/>
                 <p className="blog-text">At MK Creators, we’re more than just creators of exceptional software; we’re stewards of knowledge within the tech sphere. Our blog serves as a goldmine of articles, offering invaluable insights and real-world use cases tailored to professionals across the board—whether you’re a front-end aficionado, a back-end maestro, or a seasoned project manager.</p>
             </div>
             <br/><br/>
             <div className="blog-two">
-                <img src="assets/images/img-2.jpg" alt="img" height="200" width="300" className="blog-img"/>
+                <img src="assets/images/img-2.jpg" alt="img-2" height="200" width="300" className="blog-img"/>
                 <p className="blog-text">For a peek into the inner workings of a thriving e-commerce giant, look no further than Etsy’s tech blog – Code as Craft. It’s a treasure trove of experiences and challenges encountered while managing a large-scale e-commerce platform.</p>
             </div>
         </div>
@@ -226,15 +226,23 @@ export default function Body() {
         <div className="footer-content">
             <p>Copyright 2034 &copy; MK CREATORS</p>
             <div className="top">
-                <a href="#" className="fa fa-facebook"></a>
-                <a href="#" className="fa fa-twitter"></a>
-                <a href="#" className="fa fa-linkedin"></a>
-                <a href="#" className="fa fa-instagram"></a>
+                <a className='fa' href="https://facebook.com" aria-label="Facebook">
+                 <FaFacebook />
+                </a>
+                <a className='fa' href="https://facebook.com" aria-label="Facebook">
+                <FaTwitter/>
+                </a>
+                <a className='fa' href="https://facebook.com" aria-label="Facebook">
+                <FaLinkedin/>
+                </a>
+                <a className='fa' href="https://facebook.com" aria-label="Facebook">
+                <FaInstagram/>
+                </a>
             </div>
         </div>
     </section>
     <div className="back">
-        <a href="#">↑</a>
+        <a href="#back" aria-label="Scroll to top">↑</a>
         <div className="tooltip">Back To Top</div>
     </div>
     <WapButton></WapButton>
