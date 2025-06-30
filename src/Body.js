@@ -197,12 +197,12 @@ export default function Body() {
         </div>
         <div className="contact-content">
             <form id="myForm">
-                <label for="name">Name:</label>
+                <label htmlFor="name">Name:</label>
                 <input type="text" name="name" size="35" className="input-type" placeholder="Your Name Here" required/>
-                <label for="email">Email:</label>
+                <label htmlFor="email">Email:</label>
                 <input type="email" name="email" size="35" className="input-type" placeholder="Email to ask Help" required/><br/> 
                 <div className="country">
-                    <label for="country">Country: </label>
+                    <label htmlFor="country">Country: </label>
                     <select name="country" id="country" className="input-type">
                         <option>Where are you from ?</option>
                         <option value="india">India</option>
@@ -211,7 +211,7 @@ export default function Body() {
                     </select><br/>
                 </div>
                 <div className="message">
-                    <label for="message">Message:</label><br/>
+                    <label htmlFor="message">Message:</label><br/>
                     <textarea name="message" id="message" cols="60" rows="8"  className="input-type" placeholder="Something"></textarea><br/>
                     <input type="submit" value="Submit"  className="input-type input-button"/>
                     <input type="reset" value="Clear" className="input-type input-button"/>
